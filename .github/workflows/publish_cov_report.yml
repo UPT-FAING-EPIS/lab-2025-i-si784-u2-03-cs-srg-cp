@@ -15,20 +15,20 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     - name: Restore dependencies & Run tests with coverage
       run: |
-        cd MyMath
+        cd Bank
         dotnet restore
         dotnet test --collect:"XPlat Code Coverage"
     - name: Install ReportGenerator
       run: dotnet tool install -g dotnet-reportgenerator-globaltool
     - name: Generate coverage Report
       run: |
-        cd MyMath
+        cd Bank
         reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes:HTML
         ls Cobertura
     - name: Deploy coverage report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: MyMath/Cobertura
+        publish_dir: Bank/Cobertura
         destination_dir: Cobertura
         keep_files: true 
