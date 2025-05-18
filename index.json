@@ -1,0 +1,37 @@
+{
+  "Cobertura/SummaryGithub.html": {
+    "href": "Cobertura/SummaryGithub.html",
+    "title": "Summary | Bank App",
+    "summary": "Summary Summary Generated on: 05/18/2025 - 22:03:45 Coverage date: 05/18/2025 - 22:03:43 Parser: Cobertura Assemblies: 1 Classes: 1 Files: 1 Line coverage: 100% (20 of 20) Covered lines: 20 Uncovered lines: 0 Coverable lines: 20 Total lines: 63 Branch coverage: 100% (6 of 6) Covered branches: 6 Total branches: 6 Method coverage: Feature is only available for sponsors Coverage Bank.Domain - 100% Name Line Branch Bank.Domain 100% 100% Bank.Domain.BankAccount 100% 100%"
+  },
+  "disenio.html": {
+    "href": "disenio.html",
+    "title": "| Bank App",
+    "summary": "classDiagram class BankAccount BankAccount : +String CustomerName BankAccount : +Double Balance BankAccount : +Debit() Void BankAccount : +Credit() Void"
+  },
+  "docs/Bank.Domain.BankAccount.html": {
+    "href": "docs/Bank.Domain.BankAccount.html",
+    "title": "Class BankAccount | Bank App",
+    "summary": "Class BankAccount Namespace Bank.Domain Assembly Bank.Domain.dll Represents a bank account with basic operations like debit and credit. public class BankAccount Inheritance object BankAccount Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BankAccount(string, double) Initializes a new instance of the BankAccount class. public BankAccount(string customerName, double balance) Parameters customerName string The name of the customer. balance double The initial balance. Fields DebitAmountExceedsBalanceMessage public const string DebitAmountExceedsBalanceMessage = \"Debit amount exceeds balance\" Field Value string DebitAmountLessThanZeroMessage public const string DebitAmountLessThanZeroMessage = \"Debit amount is less than zero\" Field Value string Properties Balance Gets the current balance of the account. public double Balance { get; } Property Value double CustomerName Gets the name of the customer. public string CustomerName { get; } Property Value string Methods Credit(double) Adds a specific amount to the account. public void Credit(double amount) Parameters amount double The amount to add. Exceptions ArgumentOutOfRangeException Thrown when the amount is less than zero. Debit(double) Withdraws a specific amount from the account. public void Debit(double amount) Parameters amount double The amount to withdraw. Exceptions ArgumentOutOfRangeException Thrown when the amount is greater than the balance or less than zero."
+  },
+  "docs/Bank.Domain.Tests.BankAccountTests.html": {
+    "href": "docs/Bank.Domain.Tests.BankAccountTests.html",
+    "title": "Class BankAccountTests | Bank App",
+    "summary": "Class BankAccountTests Namespace Bank.Domain.Tests Assembly Bank.Domain.Tests.dll public class BankAccountTests Inheritance object BankAccountTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Balance_ShouldReturnCorrectInitialBalance() [Test] public void Balance_ShouldReturnCorrectInitialBalance() Credit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange() [Test] public void Credit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange() Credit_WithValidAmount_UpdatesBalance() [Test] public void Credit_WithValidAmount_UpdatesBalance() CustomerName_ShouldReturnCorrectName() [Test] public void CustomerName_ShouldReturnCorrectName() Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange() [Test] public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange() Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange() [Test] public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange() Debit_WithValidAmount_ShouldDecreaseBalance() [Test] public void Debit_WithValidAmount_ShouldDecreaseBalance() Debit_WithValidAmount_UpdatesBalance() [Test] public void Debit_WithValidAmount_UpdatesBalance()"
+  },
+  "docs/Bank.Domain.Tests.html": {
+    "href": "docs/Bank.Domain.Tests.html",
+    "title": "Namespace Bank.Domain.Tests | Bank App",
+    "summary": "Namespace Bank.Domain.Tests Classes BankAccountTests"
+  },
+  "docs/Bank.Domain.html": {
+    "href": "docs/Bank.Domain.html",
+    "title": "Namespace Bank.Domain | Bank App",
+    "summary": "Namespace Bank.Domain Classes BankAccount Represents a bank account with basic operations like debit and credit."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | Bank App",
+    "summary": "This is the HOMEPAGE. Pruebas HTML Diagrama de Clases Pruebas Markdown"
+  }
+}
